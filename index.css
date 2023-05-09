@@ -1,0 +1,263 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: lightgrey;
+  color: black;
+  position: fixed;
+	width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.logo {
+  flex: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 20px;
+}
+.logo h2 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+header .nav_link {
+  flex: 50%;
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  column-gap: 50px;
+}
+ul li {
+  font-size: 22px;
+  text-align: center;
+}
+ul li a {
+  text-decoration: none;
+  color: rgba(37, 36, 36, 0.643);
+}
+ul li a:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+  -ms-transition: color 1s ease-in;
+}
+a:link {
+  color: black;
+}
+/* visited link */
+a:visited {
+  color: grey;
+}
+/* selected link */
+ul li a:active {
+  color: blue;
+}
+main{
+	margin-top: 100px;
+}
+section {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  float: left;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: rgba(56, 55, 55, 0.681) 0px 10px 10px;
+  background-color: black;
+}
+.profile-pic img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.info {
+  overflow: hidden;
+}
+.info span {
+  color: black;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: ghostwhite;
+  width: 62.5%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 2rem;
+  word-spacing: normal;
+  padding: 0 20px;
+  color: black;
+  letter-spacing: normal;
+}
+.bio h2 {
+  margin-top: 40px;
+  color: gainsboro;
+}
+.bio p {
+  margin-bottom: 40px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 95%;
+  margin: auto;
+  color: gainsboro;
+}
+.school {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.primary-school,
+.higher-education {
+  background-color: ghostwhite;
+  color: black;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  margin: 0 40px;
+}
+.primary-school span,
+.higher-education span {
+  color: black;
+  font-weight: bold;
+}
+.Contact {
+  background-color: white;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 75%; */
+  margin: auto;
+}
+.Contact h2{
+	 margin-top: 40px;
+  color: gainsboro;
+}
+.address{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.container {
+	background-color: ghostwhite;
+  max-width: 600px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 350px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+textarea{
+height: 60px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.footers{
+	display: flex ;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.footers ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	list-style-type: none;
+}
+
+.footers ul a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .info,
+  .profile-pic {
+    float: none;
+    width: 100%;
+  }
+}
